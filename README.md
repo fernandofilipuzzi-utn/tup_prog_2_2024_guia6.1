@@ -1,0 +1,1 @@
+# tup_aplicada_2024_guia6.1
