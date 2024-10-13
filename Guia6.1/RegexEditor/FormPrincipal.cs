@@ -26,8 +26,6 @@ namespace RegexEditor
             string contenido = tbContenido.Text;
             string patron=tbPatron.Text;
 
-            
-
             tbResultado.Text = "";
             Match m=Regex.Match(contenido, patron);
 
@@ -36,7 +34,7 @@ namespace RegexEditor
 
             while (m.Success)
             {
-                if (chx.Checked==false)
+                if (chxEsGrupo.Checked==false)
                 {
                     tbResultado.Text = m.Value;
                 }
@@ -59,6 +57,27 @@ namespace RegexEditor
                 m.NextMatch
             }
             */
+        }
+
+        private void FormPrincipal_Load(object sender, EventArgs e)
+        {
+            comboBox1.Items.AddRange(
+               new Ejemplo[]{
+                    new Ejemplo("([0-9]+)","312-45645-4565",true),
+                    new Ejemplo("[0-9]+","312-45645-4565",false)
+               });
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Ejemplo ej = comboBox1.SelectedItem as Ejemplo;
+
+            if (ej != null)
+            {
+                tbContenido.Text = ej.Contenido;
+                tbPatron.Text = ej.Patron;
+                chxEsGrupo.Checked = ej.EsGrupo;
+            }
         }
     }
 }
