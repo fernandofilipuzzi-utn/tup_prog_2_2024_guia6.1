@@ -46,7 +46,7 @@
             this.tbContenido.Multiline = true;
             this.tbContenido.Name = "tbContenido";
             this.tbContenido.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbContenido.Size = new System.Drawing.Size(1059, 109);
+            this.tbContenido.Size = new System.Drawing.Size(701, 109);
             this.tbContenido.TabIndex = 8;
             // 
             // tbResultado
@@ -57,12 +57,12 @@
             this.tbResultado.Multiline = true;
             this.tbResultado.Name = "tbResultado";
             this.tbResultado.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbResultado.Size = new System.Drawing.Size(1059, 259);
+            this.tbResultado.Size = new System.Drawing.Size(701, 170);
             this.tbResultado.TabIndex = 9;
             // 
             // btnVerResultado
             // 
-            this.btnVerResultado.Location = new System.Drawing.Point(1100, 59);
+            this.btnVerResultado.Location = new System.Drawing.Point(728, 31);
             this.btnVerResultado.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.btnVerResultado.Name = "btnVerResultado";
             this.btnVerResultado.Size = new System.Drawing.Size(184, 122);
@@ -79,13 +79,13 @@
             this.tbPatron.Multiline = true;
             this.tbPatron.Name = "tbPatron";
             this.tbPatron.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbPatron.Size = new System.Drawing.Size(1059, 109);
+            this.tbPatron.Size = new System.Drawing.Size(701, 109);
             this.tbPatron.TabIndex = 11;
             // 
             // chx
             // 
             this.chx.AutoSize = true;
-            this.chx.Location = new System.Drawing.Point(1118, 194);
+            this.chx.Location = new System.Drawing.Point(744, 186);
             this.chx.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chx.Name = "chx";
             this.chx.Size = new System.Drawing.Size(133, 24);
@@ -124,7 +124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1299, 601);
+            this.ClientSize = new System.Drawing.Size(937, 506);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

@@ -31,7 +31,7 @@ namespace RegexEditor
             tbResultado.Text = "";
             Match m=Regex.Match(contenido, patron);
 
-            if(m.Success)
+            if(m.Success==false)
                 tbResultado.Text = "no hay resultado";
 
             while (m.Success)
@@ -41,11 +41,10 @@ namespace RegexEditor
                     tbResultado.Text = m.Value;
                 }
                 else
-                {
-                    tbResultado.Text += "";
-                    foreach (Group g in m.Groups)
+                {                 
+                    for(int n=1;n<m.Groups.Count;n++)
                     {
-                        tbResultado.Text += g.Value+"\r\n";
+                        tbResultado.Text += m.Groups[n].Value+"\r\n";
                     }
                 }
                 m = m.NextMatch();
