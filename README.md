@@ -1,1 +1,1 @@
-# tup_prog_2_2024_guia6.1
+# Guía 6.1. Manejo de cadenas de caracteres
